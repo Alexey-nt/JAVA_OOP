@@ -2,16 +2,12 @@ package org.example.units;
 
 public class Bowman extends Shooter {
 
-    int arrows;
-
-    int accuracy;
-
-    public Bowman(String name) {
-        super(100, name, 1, 6, 50, new int[]{6, 12},  10, 60);
+    public Bowman(String name, boolean firstTeam) {
+        super("Лучник",50, name, firstTeam, 10, new int[]{8, 16},  10, 60);
     }
 
     @Override
     public String getInfo() {
-        return "Лучник";
+        return className + " " + name;
     }
 }

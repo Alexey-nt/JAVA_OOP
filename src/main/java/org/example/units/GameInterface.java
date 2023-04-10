@@ -1,9 +1,12 @@
 package org.example.units;
 
-public interface GameInterface {
+import org.example.teams.Team;
 
-    void step();
+import java.util.ArrayList;
+
+public interface GameInterface {
 
     String getInfo();
 
+    void step();
 }
